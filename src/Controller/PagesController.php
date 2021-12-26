@@ -70,4 +70,10 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+
+    public function sample()
+    {
+        $hoge = 'hoge';
+        $this->set(['hoge' => $hoge]);
+    }
 }
